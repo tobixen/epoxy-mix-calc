@@ -20,4 +20,4 @@ As for now, just download the script, install the python package `click` and run
 
 * Accept one number instead of six.  I'll definitively fix this before mixing epoxy on the hard the next time.  This script was initially written to solve the wave problem, but it's useful also for solving calculation and overshoot problems.
 * Command line options.  I've imported the `click`-library for this purpose, but I only use it for creating prompts and output.
-* Package wrapping
+* Package wrapping - should create a version number and a changelog, should make this up to the latest pypi standards, push to pypi, etc
