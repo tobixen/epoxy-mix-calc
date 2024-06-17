@@ -32,7 +32,7 @@ def find_hardener(tara, base, hardener, tot_weight, adding, part100):
     click.echo(f"base: {base:.1f}g")
     click.echo(f"hardener: {hardener:.1f}g")
     click.echo(f"more hardener needed: {hardener_needed:.1f}g")
-    click.echo(f"total weight needed: {tara+base+hardener+hardener_needed:.1f}g")
+    click.echo(f"total weight needed: {tara+base+hardener+max(hardener_needed, -hardener_needed/part100*100):.1f}g")
     return (tara,base,hardener,hardener_needed)
 
 def interactive_read_numbers(what):
